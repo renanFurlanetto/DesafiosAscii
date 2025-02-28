@@ -1,0 +1,212 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: transparent; 
+  color: #fff;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.button-style {
+  list-style: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sobre {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.eu {
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.image img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 10px; 
+  border-radius: 200px;
+}
+
+.eu p {
+  margin: 0;
+}
+
+.conhecimento {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.container {
+  background: #2eacba;
+  border-radius: 30px;
+  width: 1200px;
+  height: 372px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttons button:focus {
+  outline: 3px solid #007bff;
+}
+
+.buttons button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 35px;
+  width: 150px;
+}
+.topics p {
+  display: none;
+}
+.topics p.active {
+  display: block;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font: 500 15px 'Inter', sans-serif;
+}
+
+.topics p {
+  margin: 70px 10px;
+  text-align: left;
+  display: none;
+}
+
+.contato {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.contatos {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.icons img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.icons img.aparecer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efeito hover para os ícones */
+.icons img:hover {
+  transform: scale(1.2) rotate(5deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.icons {
+  position: relative;
+  top: -10px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%; 
+    height: auto;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 80%; 
+    margin-bottom: 10px;
+  }
+
+  .image img {
+    width: 120px; 
+  }
+
+  .icons a {
+    margin: 10px; 
+  }
+}
+
+.icons a {
+  margin-right: 30px;
+  margin-left: 30px; 
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color:#007bff;
+  color: rgb(233, 236, 238);
+}
+
